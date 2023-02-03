@@ -16,7 +16,7 @@ async def start(client, message):
         await db.add_user(user.id)             
     txt=f"👋 Hello Developer {user.mention} \n\nI am an Advance file Renamer and file Converter BOT with Custom thumbnail support.\n\nSend me any video or document !"
     button=InlineKeyboardMarkup([[
-        InlineKeyboardButton(" Join LusiFilms ", https://t.me/LusiFilms')
+        InlineKeyboardButton(" Developer ", callback_data='dev')
         ],[
         InlineKeyboardButton(' About', callback_data='about'),
         InlineKeyboardButton(' Help', callback_data='help')
@@ -63,7 +63,7 @@ async def cb_handler(client, query: CallbackQuery):
         await query.message.edit_text(
             text=f"""👋 Hello Developer {query.from_user.mention} \n\nI am an Advance file Renamer and file Converter BOT with permanent and custom thumbnail support.\n\nSend me any video or document !""",
             reply_markup=InlineKeyboardMarkup( [[
-        InlineKeyboardButton(" Join LusiFilms ", https://t.me/lusifilms')
+        InlineKeyboardButton(" Developer ", callback_data='dev')
         ],[
         InlineKeyboardButton(' About', callback_data='about'),
         InlineKeyboardButton(' Help', callback_data='help')
