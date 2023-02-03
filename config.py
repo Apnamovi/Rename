@@ -2,22 +2,22 @@ import re, os
 
 id_pattern = re.compile(r'^.\d+$') 
 
-API_ID = os.environ.get("API_ID", "")
+API_ID = os.environ.get("API_ID", "26461352")
 
-API_HASH = os.environ.get("API_HASH", "")
+API_HASH = os.environ.get("API_HASH", "ab9cc32776ada8335852b50cd96bb8c6")
 
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "6117930720:AAF7HsslooXeTJ-fjRZjuafD3VGvoUI1CfE") 
 
-FORCE_SUB = os.environ.get("FORCE_SUB", "WebXBots") 
+FORCE_SUB = os.environ.get("FORCE_SUB", "-1001647670460") 
 
-DB_NAME = os.environ.get("DB_NAME","")     
+DB_NAME = os.environ.get("DB_NAME","cluster0")     
 
-DB_URL = os.environ.get("DB_URL","")
+DB_URL = os.environ.get("DB_URL","mongodb+srv://Jk2:Jk2@cluster0.xb05atc.mongodb.net/?retryWrites=true&w=majority")
  
-FLOOD = int(os.environ.get("FLOOD", "10"))
+FLOOD = int(os.environ.get("FLOOD", "50"))
 
-START_PIC = os.environ.get("START_PIC", "https://graph.org/Rename-Bot-01-15")
+START_PIC = os.environ.get("START_PIC", "https://telegra.ph/file/884d04d7c61963dd0230a.jpg")
 
-ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
+ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '5554564210').split()]
 
 PORT = os.environ.get("PORT", "8080")
