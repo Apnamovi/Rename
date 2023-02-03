@@ -18,6 +18,9 @@ async def start(client, message):
     button=InlineKeyboardMarkup([[
         InlineKeyboardButton(" Developer ", callback_data='dev')
         ],[
+        InlineKeyboardButton(' Lusi Films', url='https://t.me/lusifilms'),
+        InlineKeyboardButton(' Request Group', url='https://t.me/apnamovie4')
+        ],[
         InlineKeyboardButton(' About', callback_data='about'),
         InlineKeyboardButton(' Help', callback_data='help')
         ]
@@ -65,6 +68,9 @@ async def cb_handler(client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup( [[
         InlineKeyboardButton(" Developer ", callback_data='dev')
         ],[
+        InlineKeyboardButton(' Lusi Films', url='https://t.me/lusifilms'),
+        InlineKeyboardButton(' Request Group', url='https://t.me/apnamovie4')
+        ],[
         InlineKeyboardButton(' About', callback_data='about'),
         InlineKeyboardButton(' Help', callback_data='help')
         ]
@@ -75,7 +81,7 @@ async def cb_handler(client, query: CallbackQuery):
         await query.message.edit_text(
             text=mr.HELP_TXT,
             reply_markup=InlineKeyboardMarkup( [[
-               InlineKeyboardButton(" Join Movie Channel ", url="https://t.me/TopAllMovie")
+               InlineKeyboardButton(" Join our Movie Channel ", url="https://t.me/topallmovie")
                ],[
                InlineKeyboardButton(" 𝙲𝙻𝙾𝚂𝙴", callback_data = "close"),
                InlineKeyboardButton(" 𝙱𝙰𝙲𝙺", callback_data = "start")
@@ -87,7 +93,7 @@ async def cb_handler(client, query: CallbackQuery):
             text=mr.ABOUT_TXT.format(client.mention),
             disable_web_page_preview = True,
             reply_markup=InlineKeyboardMarkup( [[
-                InlineKeyboardButton(" Join Movie Channel ", url="https://t.me/TopAllMovie")
+                InlineKeyboardButton(" Join our Movie Channel ", url="https://t.me/topallmovie")
                ],[
                InlineKeyboardButton(" 𝙲𝙻𝙾𝚂𝙴", callback_data = "close"),
                InlineKeyboardButton(" 𝙱𝙰𝙲𝙺", callback_data = "start")
@@ -98,7 +104,7 @@ async def cb_handler(client, query: CallbackQuery):
         await query.message.edit_text(
             text=mr.DEV_TXT,
             reply_markup=InlineKeyboardMarkup( [[
-                InlineKeyboardButton(" Join Movie Channel ", url="https://t.me/TopAllMovie")
+                InlineKeyboardButton(" Join our Movie Channel ", url="https://t.me/topallmovie")
                ],[
                InlineKeyboardButton(" 𝙲𝙻𝙾𝚂𝙴", callback_data = "close"),
                InlineKeyboardButton(" 𝙱𝙰𝙲𝙺", callback_data = "start")
