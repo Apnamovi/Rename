@@ -26,7 +26,7 @@
  * Clone the Repo.
 
 ```
-git clone https://github.com/WebX-Divin/Rename-Bot-V1.0
+git clone https://Apnamovi/Rename-Bot-V1.0
 ```
  * Move to the Repo Folder in the VPS.
 
