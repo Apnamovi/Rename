@@ -14,7 +14,7 @@ class mr(object):
 ├📕 LIBRARY : <a href=https://github.com/pyrogram>Pyrogram</a>
 ├✏️ LANGUAGE : <a href=https://www.python.org>Python 3</a>
 ├💾 DATABASE : <a href=https://cloud.mongodb.com>MongoDB</a>
-├🌀 𝚂𝙴𝚁𝚅𝙴𝚁 : <a href=https://www.oracle.com/cloud/>Render</a>
+├🌀 𝚂𝙴𝚁𝚅𝙴𝚁 : <a href=https://www.heroku.com/cloud/>Heroku</a>
 ├📊 BUILD-STATUS : Python v3.10.5              
 ╰───────────────⍟
                                 """
